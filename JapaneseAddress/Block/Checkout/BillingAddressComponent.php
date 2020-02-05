@@ -92,11 +92,6 @@ class BillingAddressComponent implements LayoutProcessorInterface
         return $component;
     }
 
-    /**
-     * Retrieve current store locale from system configuration.
-     *
-     * @return mixed
-     */
     private function getStoreLocale()
     {
         return $this->scopeConfig->getValue(DirectoryHelper::XML_PATH_DEFAULT_LOCALE, ScopeInterface::SCOPE_STORE);
